@@ -1,9 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Keep generated files outside OneDrive. OneDrive cloud placeholders make
-  // Node's readlink() fail when Next.js loads its server manifests.
-  distDir: process.env.NEXT_DIST_DIR || ".next",
   outputFileTracingRoot: __dirname,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "set \"NEXT_DIST_DIR=..\\..\\..\\AppData\\Local\\Temp\\aaswad-papad-next\" && set \"NODE_PATH=%CD%\\node_modules\" && next dev",
-    "build": "set \"NEXT_DIST_DIR=..\\..\\..\\AppData\\Local\\Temp\\aaswad-papad-next\" && set \"NODE_PATH=%CD%\\node_modules\" && next build",
-    "start": "set \"NEXT_DIST_DIR=..\\..\\..\\AppData\\Local\\Temp\\aaswad-papad-next\" && set \"NODE_PATH=%CD%\\node_modules\" && next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
