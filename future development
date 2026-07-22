@@ -1,0 +1,39 @@
+Added production source-code protections:
+Disabled browser source maps.
+Kept the X-Powered-By header disabled.
+Confirmed there are no public .map files.
+Client-side JavaScript can still be inspected by browsers, but the original source structure will no longer be easily exposed through source maps.
+
+Edited next.config.ts+1-0Review changesUndoReview
+
+now tell me what will happen if i create a super admin and give him access to add product card and upload pics
+
+Currently, the app does not have real authentication. The admin upload page and /api/upload endpoint are publicly accessible, though uploads are limited and validated.
+If you add a Super Admin system, the admin should be able to:
+Log in securely.
+Add, edit, reorder, and remove product cards.
+Upload and replace product images.
+Manage categories and product details.
+Access protected admin-only pages and APIs.
+Important protections are required:
+Password hashing, never plain-text passwords.
+Secure sessions or JWTs with expiration.
+Role-based access control.
+Protected server-side API routes—not only hidden UI buttons.
+CSRF protection and upload rate limiting.
+Audit logs for product and image changes.
+Secure image validation and storage.
+The public website will still show the products, but visitors will not be able to modify them. Also, a Super Admin cannot hide client-side website code completely; they only control protected management functions.
+
+For a Super Admin who can add products and upload images, you will need a backend and persistent storage.
+The public website can remain mostly static for speed, while the admin side becomes dynamic:
+Database: products, categories, users, roles.
+Authentication: Super Admin login and sessions.
+Storage: product images in cloud storage or a server-managed upload system.
+API: protected endpoints for creating and editing products.
+Your current upload system writes files locally, which is suitable for development but unreliable after deployment. A practical setup would be:
+Next.js frontend
+PostgreSQL or Supabase database
+Supabase Auth or another authentication provider
+Supabase Storage or Cloudinary for images
+So the site can be a hybrid: static public pages with a dynamic backend/admin panel.

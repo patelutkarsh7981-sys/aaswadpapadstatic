@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: #f8f0dc;
+  color: #382f22;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+.dark body {
+  background: #151914;
+  color: #f8f0dc;
+}
+
+.glass {
+  background: rgba(255, 252, 242, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.54);
+  backdrop-filter: blur(18px);
+}
+
+.dark .glass {
+  background: rgba(25, 31, 23, 0.76);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.section-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+::selection {
+  background: #2f6f3e;
+  color: #fffdf3;
+}
