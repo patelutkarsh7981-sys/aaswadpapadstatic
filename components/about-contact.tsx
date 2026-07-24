@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Reveal } from "@/components/motion";
 import { manufacturer } from "@/data/products";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -11,19 +12,19 @@ export function AboutContact() {
     <>
       <section id="about" className="bg-white py-20 dark:bg-[#1b2119]">
         <div className="section-shell">
-          <div className="max-w-4xl">
+          <Reveal className="max-w-4xl">
             <p className="text-sm font-black uppercase tracking-[0.22em] text-leaf dark:text-[#b9d58f]">About Aaswad</p>
             <h2 className="mt-3 font-serif text-4xl font-black text-cacao dark:text-cream">Serving Tradition Since Generations</h2>
             <p className="mt-5 text-lg leading-8 text-cacao/78 dark:text-cream/82">
               Aaswad Papad brings authentic taste, perfect crisp, and premium quality to traditional Gujarati snacks.
               The brand stands for freshness, crispiness, authenticity, quality, tradition, and excellence.
             </p>
-          </div>
+          </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {["Authentic Taste", "Perfect Crisp", "Premium Quality", "Traditional Manufacturing", "High Hygiene Standards", "Fresh Ingredients"].map((item) => (
-              <div key={item} className="glass rounded-[8px] p-5 text-center font-black text-leaf dark:text-[#b9d58f]">
+            {["Authentic Taste", "Perfect Crisp", "Premium Quality", "Traditional Manufacturing", "High Hygiene Standards", "Fresh Ingredients"].map((item, index) => (
+              <Reveal key={item} delay={index * 0.05} className="glass rounded-[8px] p-5 text-center font-black text-leaf dark:text-[#b9d58f]">
                 {item}
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>

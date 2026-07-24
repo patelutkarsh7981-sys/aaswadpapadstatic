@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, SlidersHorizontal } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import { getRicePapadSegmentForProduct, productSegments, products, ricePapadSegments, sortRicePapadProducts, type ProductSegment, type RicePapadSegment } from "@/data/products";
 import { ProductCard } from "@/components/product-card";
@@ -62,18 +63,19 @@ export function ProductExplorer({ qrMode = false }: { qrMode?: boolean }) {
             <SlidersHorizontal size={17} />
           </span>
           {filterOptions.map((item) => (
-            <button
+            <motion.button
               key={item.value}
               type="button"
               onClick={() => selectSegment(item.value)}
-              className={`shrink-0 rounded-full px-5 py-3 text-sm font-black transition ${
+              whileTap={{ scale: 0.95 }}
+              className={`relative shrink-0 rounded-full px-5 py-3 text-sm font-black transition ${
                 segment === item.value
                   ? "bg-leaf text-white shadow-soft"
                   : "bg-white/70 text-cacao hover:bg-white dark:bg-[#253126] dark:text-cream dark:hover:bg-[#30402f]"
               }`}
             >
               {item.label}
-            </button>
+            </motion.button>
           ))}
         </div>
         {showRiceFilters ? (
@@ -96,9 +98,13 @@ export function ProductExplorer({ qrMode = false }: { qrMode?: boolean }) {
           </div>
         ) : null}
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((product) => (
-            <ProductCard key={product.id} product={product} highlighted={qrMode && product.featured} />
-          ))}
+          <AnimatePresence mode="popLayout">
+            {filtered.map((product, index) => (
+              <motion.div key={product.id} layout initial={{ opacity: 0, y: 18, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: -12, scale: 0.97 }} transition={{ duration: 0.35, delay: Math.min(index * 0.035, 0.2) }}>
+                <ProductCard product={product} highlighted={qrMode && product.featured} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
         {filtered.length === 0 ? (
           <div className="mt-10 rounded-[8px] border border-dashed border-leaf/30 bg-white/60 p-10 text-center font-bold text-cacao/75 dark:bg-[#202a21] dark:text-[#f8f0dc]">

@@ -1,11 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Eye, ShoppingBag } from "lucide-react";
+import { motion } from "framer-motion";
 import type { Product } from "@/data/products";
 
 export function ProductCard({ product, highlighted }: { product: Product; highlighted?: boolean }) {
   return (
-    <article
+    <motion.article
+      layout
+      whileHover={{ y: -8 }}
+      transition={{ type: "spring", stiffness: 300, damping: 22 }}
       className={`group overflow-hidden rounded-[8px] border bg-white/74 shadow-soft backdrop-blur transition dark:border-white/16 dark:bg-[#202a21] ${
         highlighted ? "border-saffron ring-4 ring-saffron/24" : "border-white/70"
       }`}
@@ -52,6 +58,6 @@ export function ProductCard({ product, highlighted }: { product: Product; highli
           </Link>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
