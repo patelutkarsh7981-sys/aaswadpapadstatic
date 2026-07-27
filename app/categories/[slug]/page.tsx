@@ -17,6 +17,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: segment.name,
     description: `Explore Aaswad Papad's ${segment.name} range, including authentic Gujarati snacks from Nadiad.`,
+    openGraph: {
+      title: `${segment.name} | Aaswad Papad`,
+      description: `Explore Aaswad Papad's ${segment.name} range, including authentic Gujarati snacks from Nadiad.`,
+      type: "website"
+    },
     keywords: [segment.name, "Aaswad Papad", "Gujarati snacks", "Nadiad"],
     alternates: {
       canonical: `/categories/${slug}`

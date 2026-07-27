@@ -17,6 +17,25 @@ export const metadata: Metadata = {
   },
   description:
     "Premium papad, rice papad, khichiya papad, mathiya, and chorafali from Aaswad Papad, Nadiad.",
+  applicationName: "Aaswad Papad",
+  authors: [{ name: "Aaswad Papad" }],
+  creator: "Aaswad Papad",
+  publisher: "Aaswad Papad",
+  category: "Food and beverage",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION
+  },
   keywords: [
     "papad",
     "khichiya papad",

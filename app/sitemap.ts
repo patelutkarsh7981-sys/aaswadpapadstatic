@@ -5,16 +5,17 @@ const baseUrl = "https://aaswadpapad.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
+    { url: baseUrl, changeFrequency: "weekly", priority: 1 },
+    { url: `${baseUrl}/products`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/about`, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/contact`, changeFrequency: "yearly", priority: 0.7 },
     ...products.map((product) => ({
       url: `${baseUrl}/products/${product.slug}`,
-      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8
     })),
     ...productSegments.map((segment) => ({
       url: `${baseUrl}/categories/${segmentToSlug(segment.name)}`,
-      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7
     }))
