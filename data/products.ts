@@ -8,7 +8,7 @@ export type ProductCategory =
   | "Flat Khichiya Papad";
 
 export type ProductSegment = "Papad" | "Coin Papad" | "Rice Papad / Khichiya Papad" | "Mathiya" | "Chorafali";
-export type RicePapadSegment = "5 Inch" | "3 Inch" | "Flat";
+export type RicePapadSegment = "7 Inch" | "5 Inch" | "3 Inch" | "Flat";
 
 export type Product = {
   id: string;
@@ -81,6 +81,17 @@ export const products: Product[] = [
     image: "/products/clean/garlic-mari-papad.png",
     ingredients: papadIngredients,
     featured: true
+  },
+  {
+    id: "papad-single-mari-200",
+    slug: "single-mari-papad-200gm",
+    name: "Single Mari Papad 200GM",
+    category: "Papad",
+    description: "A 200GM pack of pepper-flavored papad with a crisp, traditional taste.",
+    weight: ["200GM"],
+    image: "/products/clean/single-mari-papad-200.png",
+    ingredients: papadIngredients,
+    featured: false
   },
   {
     id: "papad-puri",
@@ -335,10 +346,11 @@ export function getSegmentForProduct(product: Product) {
   return productSegments.find((segment) => segment.categories.includes(product.category));
 }
 
-export const ricePapadSegments: RicePapadSegment[] = ["5 Inch", "3 Inch", "Flat"];
+export const ricePapadSegments: RicePapadSegment[] = ["7 Inch", "5 Inch", "3 Inch", "Flat"];
 
 export function getRicePapadSegmentForProduct(product: Product): RicePapadSegment | undefined {
   if (product.category === "Flat Khichiya Papad") return "Flat";
+  if (product.category === "Khichiya Papad") return "7 Inch";
   if (product.name.startsWith("5 Inch")) return "5 Inch";
   if (product.name.startsWith("3 Inch")) return "3 Inch";
   return undefined;
@@ -368,12 +380,12 @@ export function sortRicePapadProducts(productList: Product[]) {
 
 export const manufacturer = {
   name: "Aaswad Papad",
-  address: "Mota Pore Road, Junaraopura, Nadiad - 387001, Gujarat",
+  address: "Mota Pore Road, Junaraopura, Nadiad - 387001, Dist. Kheda, Gujarat",
   phone: "9898011344",
   displayPhone: "+91 98980 11344",
   email: "aswadpapad@gmail.com",
   website: "www.aaswadpapad.com",
-  mapsQuery: "Aaswad Papad, Mota Pore Road, Junaraopura, Nadiad 387001, Gujarat"
+  mapsQuery: "Aaswad Papad, Mota Pore Road, Junaraopura, Nadiad 387001, Kheda, Gujarat"
 };
 
 export function getProductBySlug(slug: string) {

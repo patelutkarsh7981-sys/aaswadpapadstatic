@@ -30,12 +30,11 @@ export default function ContactPage() {
               <br />
               Nadiad - 387001,
               <br />
-              Gujarat.
+              Dist. Kheda, Gujarat.
             </address>
             <div className="mt-6 grid gap-3 text-base font-bold text-cacao dark:text-cream">
               <p>Phone: {manufacturer.displayPhone}</p>
               <p>Email: {manufacturer.email}</p>
-              <p>Search Location: {manufacturer.mapsQuery}</p>
             </div>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               <Action href={`tel:+91${manufacturer.phone}`} icon={Phone} label="Call Now" />

@@ -39,11 +39,10 @@ export function AboutContact() {
               <br />
               Nadiad - 387001
               <br />
-              Gujarat
+              Dist. Kheda, Gujarat
             </address>
             <p className="mt-5 font-bold">Phone: {manufacturer.displayPhone}</p>
             <p className="font-bold">Email: {manufacturer.email}</p>
-            <p className="font-bold">Search Location: {manufacturer.mapsQuery}</p>
           </div>
           <div className="glass rounded-[8px] p-6 shadow-soft">
             <div className="grid gap-4">

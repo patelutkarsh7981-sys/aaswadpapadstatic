@@ -42,10 +42,9 @@ export default async function CategoryPage({ params }: Props) {
       <section className="section-shell pb-20">
         <Breadcrumbs items={[{ label: segment.name }]} />
         <div className="mt-8">
-          <p className="text-sm font-black uppercase tracking-[0.22em] text-leaf dark:text-[#b9d58f]">Segment</p>
-          <h1 className="mt-3 font-serif text-5xl font-black text-cacao dark:text-cream">{segment.name}</h1>
+          <h1 className="font-serif text-5xl font-black text-cacao dark:text-cream">{segment.name}</h1>
           <p className="mt-4 max-w-2xl text-cacao/70 dark:text-cream/70">
-            Products in this segment, ready for customers scanning the QR code from Aaswad packaging.
+            Explore Aaswad Papad products, ready for customers scanning the QR code from Aaswad packaging.
           </p>
         </div>
         {isRicePapadSegment ? (
@@ -56,10 +55,7 @@ export default async function CategoryPage({ params }: Props) {
 
               return (
                 <section key={riceSegment}>
-                  <div>
-                    <p className="text-xs font-black uppercase tracking-[0.18em] text-leaf dark:text-[#b9d58f]">Rice Papad Segment</p>
-                    <h2 className="mt-2 font-serif text-3xl font-black text-cacao dark:text-cream">{riceSegment}</h2>
-                  </div>
+                  <h2 className="font-serif text-3xl font-black text-cacao dark:text-cream">{riceSegment}</h2>
                   <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {segmentProducts.map((product) => (
                       <ProductCard key={product.id} product={product} />

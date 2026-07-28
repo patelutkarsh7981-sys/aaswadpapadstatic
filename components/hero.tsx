@@ -25,9 +25,6 @@ export function Hero() {
             Perfect Crisp.
           </h1>
           <p className="mt-5 text-xl font-medium text-white/86 md:text-2xl">Serving Tradition Since Generations.</p>
-          <p className="mt-4 max-w-xl text-base leading-7 text-white/80 md:text-lg">
-            Traditional papad, rice papad, khichiya, mathiya and chorafali from Aaswad Papad, Nadiad.
-          </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="#products"
