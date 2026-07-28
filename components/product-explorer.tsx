@@ -6,7 +6,8 @@ import { useMemo, useState } from "react";
 import { getRicePapadSegmentForProduct, productSegments, products, ricePapadSegments, sortRicePapadProducts, type ProductSegment, type RicePapadSegment } from "@/data/products";
 import { ProductCard } from "@/components/product-card";
 
-const filterOptions: Array<{ value: ProductSegment; label: string }> = [
+const filterOptions: Array<{ value: ProductSegment | "All"; label: string }> = [
+  { value: "All", label: "All Products" },
   { value: "Papad", label: "Papad" },
   { value: "Coin Papad", label: "Coin Papad" },
   { value: "Mathiya", label: "Mathiya" },

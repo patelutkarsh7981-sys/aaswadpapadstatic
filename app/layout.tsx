@@ -12,11 +12,11 @@ const logoPath = "/brand/aaswad-logo.png";
 export const metadata: Metadata = {
   metadataBase: new URL("https://aaswadpapad.com"),
   title: {
-    default: "Aaswad Papad | Authentic Taste, Perfect Crisp",
+    default: "Aaswad Papad | Papad Manufacturer in Nadiad, Gujarat",
     template: "%s | Aaswad Papad"
   },
   description:
-    "Premium papad, rice papad, khichiya papad, mathiya, and chorafali from Aaswad Papad, Nadiad.",
+    "Aaswad Papad is a trusted papad manufacturer in Nadiad, Gujarat. Explore authentic papad, rice papad, khichiya, mathiya and chorafali.",
   applicationName: "Aaswad Papad",
   authors: [{ name: "Aaswad Papad" }],
   creator: "Aaswad Papad",
@@ -94,7 +94,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 "@type": "LocalBusiness",
                 "@id": "https://aaswadpapad.com/#business",
                 name: manufacturer.name,
+                alternateName: "Aaswad Gruh Udhyog",
                 image: `https://aaswadpapad.com${logoPath}`,
+                logo: `https://aaswadpapad.com${logoPath}`,
                 telephone: manufacturer.displayPhone,
                 email: manufacturer.email,
                 priceRange: "₹₹",
@@ -106,7 +108,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 ],
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "Opp., Mota Pore Panchali Wadi, Near C.J Patel & Co.",
+                  streetAddress: "Mota Pore Road, Junaraopura",
                   addressLocality: "Nadiad",
                   postalCode: "387001",
                   addressRegion: "Gujarat",

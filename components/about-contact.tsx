@@ -35,13 +35,11 @@ export function AboutContact() {
             <p className="text-sm font-black uppercase tracking-[0.22em] text-leaf dark:text-[#b9d58f]">Contact</p>
             <h2 className="mt-3 font-serif text-4xl font-black text-cacao dark:text-cream">Aaswad Papad</h2>
             <address className="mt-5 not-italic leading-8 text-cacao/78 dark:text-cream/84">
-              Opp., Mota Pore Panchali Wadi
-              <br />
-              Near C.J Patel & Co.
+              Mota Pore Road, Junaraopura
               <br />
               Nadiad - 387001
               <br />
-              Kheda, Gujarat
+              Gujarat
             </address>
             <p className="mt-5 font-bold">Phone: {manufacturer.displayPhone}</p>
             <p className="font-bold">Email: {manufacturer.email}</p>

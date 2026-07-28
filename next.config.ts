@@ -1,11 +1,17 @@
+import path from "node:path";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  outputFileTracingRoot: __dirname,
+  outputFileTracingRoot: path.join(__dirname),
+  reactStrictMode: true,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
+  experimental: {
+    optimizePackageImports: ["lucide-react", "framer-motion"]
+  },
   images: {
-    formats: ["image/avif", "image/webp"]
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60
   },
   async headers() {
     const scriptPolicy = process.env.NODE_ENV === "development" ? "'self' 'unsafe-inline' 'unsafe-eval'" : "'self' 'unsafe-inline'";

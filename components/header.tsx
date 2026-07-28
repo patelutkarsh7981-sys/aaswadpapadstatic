@@ -39,13 +39,13 @@ export function Header() {
   function linkClasses(active: boolean) {
     return `rounded-full px-3.5 py-2 transition ${
       active
-        ? "bg-leaf/10 text-leaf dark:bg-white/10 dark:text-[#d5eba8]"
-        : "text-cacao hover:bg-leaf/8 hover:text-leaf dark:text-cream dark:hover:bg-white/10 dark:hover:text-[#d5eba8]"
+        ? "bg-leaf text-white dark:bg-[#d5eba8] dark:text-[#182116]"
+        : "text-cacao hover:bg-leaf/8 hover:text-leaf dark:text-[#f8f0dc] dark:hover:bg-white/15 dark:hover:text-white"
     }`;
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-leaf/18 bg-cream/92 backdrop-blur-xl dark:border-white/10 dark:bg-[#151914]/92">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-leaf/18 bg-[#fffdf3] shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-[#10160f]">
       <div className="section-shell flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3.5" aria-label="Aaswad Papad home">
           <span className="relative size-12 overflow-hidden rounded-full border-2 border-white bg-cream shadow-soft">
@@ -59,10 +59,10 @@ export function Header() {
             />
           </span>
           <span className="leading-tight">
-            <span className="block text-base font-black uppercase tracking-[0.18em] text-leaf dark:text-[#d5eba8]">
+            <span className="block text-base font-black uppercase tracking-[0.18em] text-leaf dark:text-[#f5f9ed]">
               Aaswad
             </span>
-            <span className="block text-sm font-black uppercase tracking-[0.18em] text-leaf dark:text-[#d5eba8]">Papad</span>
+            <span className="block text-sm font-black uppercase tracking-[0.18em] text-leaf dark:text-[#f5f9ed]">Papad</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-1 text-sm font-black md:flex" aria-label="Primary navigation">

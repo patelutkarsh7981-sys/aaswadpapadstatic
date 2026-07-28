@@ -43,8 +43,8 @@ export const products: Product[] = [
     slug: "single-mari-papad",
     name: "Single Mari Papad",
     category: "Papad",
-    description: "A pepper-flavored papad available in 200GM and 500GM packs.",
-    weight: ["200GM", "500GM"],
+    description: "A pepper-flavored papad in a 500GM pack.",
+    weight: ["500GM"],
     image: "/products/clean/single-mari-papad-500.png",
     ingredients: papadIngredients,
     featured: true
@@ -81,17 +81,6 @@ export const products: Product[] = [
     image: "/products/clean/garlic-mari-papad.png",
     ingredients: papadIngredients,
     featured: true
-  },
-  {
-    id: "papad-single-mari-200",
-    slug: "single-mari-papad-200gm",
-    name: "Single Mari Papad 200GM",
-    category: "Papad",
-    description: "A 200GM pack of pepper-flavored papad with a crisp, traditional taste.",
-    weight: ["200GM"],
-    image: "/products/clean/single-mari-papad-200.png",
-    ingredients: papadIngredients,
-    featured: false
   },
   {
     id: "papad-puri",
@@ -379,12 +368,12 @@ export function sortRicePapadProducts(productList: Product[]) {
 
 export const manufacturer = {
   name: "Aaswad Papad",
-  address: "Opp., Mota Pore Panchali Wadi, Near C.J Patel & Co., Nadiad - 387001, Dist. Kheda, Gujarat",
+  address: "Mota Pore Road, Junaraopura, Nadiad - 387001, Gujarat",
   phone: "9898011344",
   displayPhone: "+91 98980 11344",
   email: "aswadpapad@gmail.com",
   website: "www.aaswadpapad.com",
-  mapsQuery: "Aaswad Papad Nadiad"
+  mapsQuery: "Aaswad Papad, Mota Pore Road, Junaraopura, Nadiad 387001, Gujarat"
 };
 
 export function getProductBySlug(slug: string) {

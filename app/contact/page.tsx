@@ -26,13 +26,11 @@ export default function ContactPage() {
             <p className="text-sm font-black uppercase tracking-[0.22em] text-leaf dark:text-[#b9d58f]">Contact</p>
             <h1 className="mt-3 font-serif text-5xl font-black text-cacao dark:text-cream md:text-6xl">Aaswad Papad</h1>
             <address className="mt-6 not-italic text-lg leading-8 text-cacao/78 dark:text-cream/84">
-              Opp., Mota Pore Panchali Wadi,
-              <br />
-              Near C.J Patel & Co.,
+              Mota Pore Road, Junaraopura,
               <br />
               Nadiad - 387001,
               <br />
-              Dist. Kheda, Gujarat.
+              Gujarat.
             </address>
             <div className="mt-6 grid gap-3 text-base font-bold text-cacao dark:text-cream">
               <p>Phone: {manufacturer.displayPhone}</p>
