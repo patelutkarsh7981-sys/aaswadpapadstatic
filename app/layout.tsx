@@ -7,10 +7,11 @@ import { ScrollToTop } from "@/components/scroll-to-top";
 import { manufacturer } from "@/data/products";
 import { MotionProvider, ScrollProgress } from "@/components/motion";
 
+const siteUrl = "https://aaswadpapad.com";
 const logoPath = "/brand/aaswad-logo.png";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aaswadpapad.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Aaswad Papad | Papad Manufacturer in Nadiad, Gujarat",
     template: "%s | Aaswad Papad"
@@ -38,6 +39,11 @@ export const metadata: Metadata = {
   },
   keywords: [
     "papad",
+    "Aaswad papad",
+    "papad manufacturer",
+    "papad manufacturer in Nadiad",
+    "papad manufacturer in Gujarat",
+    "buy papad in Nadiad",
     "khichiya papad",
     "rice papad",
     "mathiya",
@@ -58,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aaswad Papad",
     description: "Serving Tradition Since Generations.",
-    url: "https://aaswadpapad.com",
+    url: siteUrl,
     siteName: "Aaswad Papad",
     locale: "en_IN",
     images: [logoPath],
@@ -92,11 +98,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
-                "@id": "https://aaswadpapad.com/#business",
+                "@id": `${siteUrl}/#business`,
                 name: manufacturer.name,
                 alternateName: "Aaswad Gruh Udhyog",
-                image: `https://aaswadpapad.com${logoPath}`,
-                logo: `https://aaswadpapad.com${logoPath}`,
+                image: `${siteUrl}${logoPath}`,
+                logo: `${siteUrl}${logoPath}`,
                 telephone: manufacturer.displayPhone,
                 email: manufacturer.email,
                 priceRange: "₹₹",
@@ -114,14 +120,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   addressRegion: "Gujarat",
                   addressCountry: "IN"
                 },
-                url: "https://aaswadpapad.com"
+                url: siteUrl
               },
               {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
-                "@id": "https://aaswadpapad.com/#website",
+                "@id": `${siteUrl}/#website`,
                 name: "Aaswad Papad",
-                url: "https://aaswadpapad.com",
+                url: siteUrl,
                 publisher: { "@id": "https://aaswadpapad.com/#business" }
               }
             ])

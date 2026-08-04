@@ -36,9 +36,33 @@ export default async function CategoryPage({ params }: Props) {
 
   const categoryProducts = products.filter((product) => segment.categories.includes(product.category));
   const isRicePapadSegment = segment.name === "Rice Papad / Khichiya Papad";
+  const categoryUrl = `https://aaswadpapad.com/categories/${slug}`;
 
   return (
     <main className="bg-cream pt-28 dark:bg-[#151914]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: `${segment.name} | Aaswad Papad`,
+            description: `Explore Aaswad Papad's ${segment.name} range from Nadiad, Gujarat.`,
+            url: categoryUrl,
+            isPartOf: { "@type": "WebSite", name: "Aaswad Papad", url: "https://aaswadpapad.com" },
+            mainEntity: {
+              "@type": "ItemList",
+              numberOfItems: categoryProducts.length,
+              itemListElement: categoryProducts.map((product, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                url: `https://aaswadpapad.com/products/${product.slug}`,
+                name: product.name
+              }))
+            }
+          })
+        }}
+      />
       <section className="section-shell pb-20">
         <Breadcrumbs items={[{ label: segment.name }]} />
         <div className="mt-8">

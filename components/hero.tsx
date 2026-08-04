@@ -4,22 +4,22 @@ import { ArrowDown, Phone } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[92vh] overflow-hidden pt-16">
+    <section aria-labelledby="hero-title" className="relative min-h-[92vh] overflow-hidden bg-cacao pt-16">
       <Image
         src="/brochure/hero.jpg"
         alt="Aaswad Papad traditional crispy papad"
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className="z-0 object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-cacao/94 via-cacao/62 to-cacao/10 dark:from-black/88 dark:via-black/52 dark:to-transparent" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-cacao/94 via-cacao/62 to-cacao/10 dark:from-black/88 dark:via-black/52 dark:to-transparent" />
       <div className="section-shell relative z-10 flex min-h-[calc(92vh-4rem)] items-center pb-14 pt-20">
-        <div className="max-w-2xl text-white drop-shadow-[0_3px_10px_rgba(40,24,12,0.65)]">
+        <div className="max-w-2xl rounded-3xl bg-cacao/80 p-6 text-white shadow-soft backdrop-blur-sm md:bg-transparent md:p-0 md:shadow-none md:backdrop-blur-0">
           <div className="mb-6 inline-flex items-center rounded-full border border-white/24 bg-white/14 px-4 py-2 text-sm font-bold backdrop-blur">
             Aaswad Papad
           </div>
-          <h1 className="font-serif text-5xl font-black leading-tight md:text-7xl">
+          <h1 id="hero-title" className="font-serif text-5xl font-black leading-tight md:text-7xl">
             Authentic Taste.
             <br />
             Perfect Crisp.
