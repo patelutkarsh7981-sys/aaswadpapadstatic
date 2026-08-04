@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { manufacturer } from "@/data/products";
-import { MotionProvider, ScrollProgress } from "@/components/motion";
+import { ScrollProgress } from "@/components/motion";
 
 const siteUrl = "https://aaswadpapad.com";
 const logoPath = "/brand/aaswad-logo.png";
@@ -82,14 +82,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
-        <MotionProvider>
-          <ScrollProgress />
-          <Header />
-          {children}
-          <ScrollToTop />
-          <FloatingWhatsApp />
-          <Footer />
-        </MotionProvider>
+        <ScrollProgress />
+        <Header />
+        {children}
+        <ScrollToTop />
+        <FloatingWhatsApp />
+        <Footer />
         <script
           type="application/ld+json"
           suppressHydrationWarning
