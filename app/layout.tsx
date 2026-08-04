@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -76,6 +76,12 @@ export const metadata: Metadata = {
     description: "Authentic Taste. Perfect Crisp.",
     images: [logoPath]
   }
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#f8f0dc"
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
