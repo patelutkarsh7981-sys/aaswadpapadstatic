@@ -42,12 +42,12 @@ export function ProductExplorer({ qrMode = false }: { qrMode?: boolean }) {
   }
 
   return (
-    <section id="products" className="bg-cream py-20 dark:bg-[#151914]">
+    <section id="products" className="bg-[#f7f4ee] py-24 dark:bg-[#151914]">
       <div className="section-shell">
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.22em] text-leaf dark:text-[#b9d58f]">Our Signature Range</p>
-            <h2 className="mt-3 font-serif text-4xl font-black text-cacao dark:text-cream md:text-5xl">Our Products</h2>
+            <h2 className="display-title mt-3 max-w-lg font-serif text-4xl font-black text-cacao dark:text-cream sm:text-5xl md:text-7xl">Our Products</h2>
           </div>
           <div className="glass flex min-h-14 items-center gap-3 rounded-full px-5">
             <Search size={18} className="text-leaf" />
@@ -59,8 +59,8 @@ export function ProductExplorer({ qrMode = false }: { qrMode?: boolean }) {
             />
           </div>
         </div>
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-white text-leaf shadow-sm dark:bg-[#253126]" aria-hidden="true">
+        <div className="mt-8 flex flex-nowrap items-center gap-2 overflow-x-auto pb-2 md:flex-wrap md:gap-3 md:overflow-visible md:pb-0">
+          <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full border border-cacao/15 bg-transparent text-leaf dark:bg-[#253126]" aria-hidden="true">
             <SlidersHorizontal size={17} />
           </span>
           {filterOptions.map((item) => (
@@ -72,7 +72,7 @@ export function ProductExplorer({ qrMode = false }: { qrMode?: boolean }) {
               className={`relative shrink-0 rounded-full px-5 py-3 text-sm font-black transition ${
                 segment === item.value
                   ? "bg-leaf text-white shadow-soft"
-                  : "bg-white/70 text-cacao hover:bg-white dark:bg-[#253126] dark:text-cream dark:hover:bg-[#30402f]"
+                  : "bg-transparent text-cacao/65 hover:bg-white dark:bg-[#253126] dark:text-cream dark:hover:bg-[#30402f]"
               }`}
             >
               {item.label}
@@ -98,7 +98,7 @@ export function ProductExplorer({ qrMode = false }: { qrMode?: boolean }) {
             ))}
           </div>
         ) : null}
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 items-stretch gap-x-3 gap-y-6 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-10 lg:grid-cols-4">
           <AnimatePresence mode="popLayout">
             {filtered.map((product, index) => (
               <motion.div key={product.id} layout initial={false} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: -12, scale: 0.97 }} transition={{ duration: 0.35, delay: Math.min(index * 0.035, 0.2) }}>

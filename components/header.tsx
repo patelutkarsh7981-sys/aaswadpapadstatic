@@ -39,13 +39,13 @@ export function Header() {
     return `rounded-full px-3.5 py-2 transition ${
       active
         ? "bg-saffron/30 text-leaf"
-        : "text-cacao hover:bg-white/55 hover:text-leaf"
+        : "text-cacao hover:bg-white hover:text-leaf"
     }`;
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/55 bg-cream/78 backdrop-blur-xl">
-      <div className="section-shell flex h-16 items-center justify-between gap-4">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-cacao/10 bg-[#f7f4ee]/94 backdrop-blur-xl">
+      <div className="section-shell flex h-[76px] items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3.5" aria-label="Aaswad Papad home">
           <span className="relative size-12 overflow-hidden rounded-full border-2 border-white bg-cream shadow-soft">
             <Image

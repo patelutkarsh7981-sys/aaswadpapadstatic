@@ -10,19 +10,19 @@ export function AboutContact() {
 
   return (
     <>
-      <section id="about" className="bg-white py-20 dark:bg-[#1b2119]">
+      <section id="about" className="bg-cacao py-24 text-cream dark:bg-[#1b2119]">
         <div className="section-shell">
           <Reveal className="max-w-4xl">
-            <p className="text-sm font-black uppercase tracking-[0.22em] text-leaf dark:text-[#b9d58f]">About Aaswad</p>
-            <h2 className="mt-3 font-serif text-4xl font-black text-cacao dark:text-cream">Serving Tradition Since Generations</h2>
-            <p className="mt-5 text-lg leading-8 text-cacao/78 dark:text-cream/82">
+            <p className="text-sm font-black uppercase tracking-[0.22em] text-saffron">About Aaswad</p>
+            <h2 className="display-title mt-3 max-w-3xl font-serif text-4xl font-black text-cream sm:text-5xl md:text-7xl">Serving Tradition Since Generations</h2>
+            <p className="mt-7 max-w-3xl text-lg leading-8 text-cream/75 dark:text-cream/82">
               Aaswad Papad brings authentic taste, perfect crisp, and premium quality to traditional Gujarati snacks.
               The brand stands for freshness, crispiness, authenticity, quality, tradition, and excellence.
             </p>
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {["Authentic Taste", "Perfect Crisp", "Premium Quality", "Traditional Manufacturing", "High Hygiene Standards", "Fresh Ingredients"].map((item, index) => (
-              <Reveal key={item} delay={index * 0.05} className="glass rounded-[8px] p-5 text-center font-black text-leaf dark:text-[#b9d58f]">
+                <Reveal key={item} delay={index * 0.05} className="rounded-[8px] border border-cream/20 p-5 text-center font-black text-saffron">
                 {item}
               </Reveal>
             ))}

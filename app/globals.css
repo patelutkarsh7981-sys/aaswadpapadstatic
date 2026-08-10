@@ -12,8 +12,8 @@
 }
 
 body {
-  background: #f8f0dc;
-  color: #382f22;
+  background: #f7f4ee;
+  color: #172b35;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
@@ -64,8 +64,27 @@ a {
 }
 
 .section-shell {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1240px, calc(100% - 40px));
   margin-inline: auto;
+}
+
+.display-title {
+  letter-spacing: -0.065em;
+  line-height: 0.92;
+}
+
+@media (max-width: 767px) {
+  .section-shell {
+    width: min(100% - 24px, 1240px);
+  }
+
+  .hero-v4 .section-shell {
+    min-height: 0;
+  }
+
+  .hero-v4 .hero-copy {
+    padding-top: 1rem;
+  }
 }
 
 h1,

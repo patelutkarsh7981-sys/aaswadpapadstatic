@@ -63,9 +63,6 @@ export function Footer() {
           <p className="text-sm text-cream/72">{manufacturer.email}</p>
         </div>
       </div>
-      <div className="section-shell mt-10 border-t border-white/10 pt-6 text-sm font-semibold text-cream/58">
-        &copy; 2026 Aaswad Papad. All Rights Reserved.
-      </div>
     </footer>
   );
 }
