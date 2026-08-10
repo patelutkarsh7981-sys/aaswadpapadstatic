@@ -34,7 +34,7 @@ export function Hero() {
         <div className="order-first relative aspect-square overflow-hidden rounded-[1.5rem] bg-cacao shadow-soft md:rounded-[2rem] lg:order-none">
           <Image src="/brochure/hero-v4-square.png" alt="Aaswad Papad traditional crispy papad arranged with spices" fill priority sizes="(max-width: 1024px) 100vw, 58vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-cacao/55 via-transparent to-transparent" />
-          <p className="absolute bottom-6 left-6 max-w-[15rem] text-sm font-bold uppercase tracking-[0.18em] text-white">Crisp, golden, unforgettable.</p>
+          <p className="absolute bottom-6 left-6 max-w-[15rem] text-sm font-bold uppercase tracking-[0.18em] text-white">Crisp, authentic, unforgettable.</p>
         </div>
       </div>
     </section>
