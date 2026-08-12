@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const values = [
   { label: "Authentic Taste", icon: Sparkles },
-  { label: "Perfect Crisp", icon: Award },
+  { label: "Perfect Crispy", icon: Award },
   { label: "Premium Quality", icon: ShieldCheck },
   { label: "Traditional Manufacturing", icon: Factory },
   { label: "High Hygiene Standards", icon: Leaf },
@@ -42,8 +42,9 @@ export default function AboutPage() {
               Serving Tradition Since Generations
             </h1>
             <p className="mt-5 text-lg leading-8 text-cacao/72 dark:text-cream/72">
-              Aaswad brings authentic taste and perfect crisp to traditional Gujarati snacks with a focus on premium quality,
-              traditional manufacturing, high hygiene standards, and fresh ingredients.
+              Aaswad brings authentic taste and perfect crispy to traditional Gujarati snacks with a focus on premium quality,
+              traditional manufacturing, high hygiene standards, and fresh ingredients. Our range includes Gujarati papad
+              (also written papad), mathiya (also spelled mathia), and festive chorafali.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {values.map((item) => {

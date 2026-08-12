@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ProductCard } from "@/components/product-card";
 import { RecentlyViewed } from "@/components/recently-viewed";
 import { ShareActions } from "@/components/share-actions";
-import { getProductBySlug, getRelatedProducts, getSegmentForProduct, manufacturer, products, segmentToSlug } from "@/data/products";
+import { getProductBySlug, getProductImageAlt, getRelatedProducts, getSegmentForProduct, manufacturer, products, segmentToSlug } from "@/data/products";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${product.name} | Aaswad Papad`,
       description: product.description,
       type: "website",
-      images: [{ url: product.image, alt: product.name }]
+      images: [{ url: product.image, alt: getProductImageAlt(product) }]
     },
     keywords: [product.name, product.category, "Aaswad Papad", "Gujarati snacks"],
     alternates: {
@@ -72,7 +72,7 @@ export default async function ProductPage({ params }: Props) {
         <div className="mt-8 grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
           <div className="glass overflow-hidden rounded-[8px] p-3 shadow-soft">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[8px] bg-white p-4">
-              <Image src={product.image} alt={product.name} fill priority sizes="(max-width: 1024px) 100vw, 48vw" className="object-contain" />
+              <Image src={product.image} alt={getProductImageAlt(product)} fill priority sizes="(max-width: 1024px) 100vw, 48vw" className="object-contain" />
             </div>
           </div>
           <div>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Aaswad Papad"
   },
   description:
-    "Aaswad Papad is a trusted papad manufacturer in Nadiad, Gujarat. Explore authentic papad, rice papad, khichiya, mathiya and chorafali.",
+    "Aaswad Papad is a trusted Gujarati papad manufacturer and supplier in Nadiad, Gujarat, offering rice papad, khichiya papad, coin papad, mathiya, chorafali and traditional Gujarati snacks.",
   applicationName: "Aaswad Papad",
   authors: [{ name: "Aaswad Papad" }],
   creator: "Aaswad Papad",
@@ -43,15 +43,35 @@ export const metadata: Metadata = {
     "papad manufacturer",
     "papad manufacturer in Nadiad",
     "papad manufacturer in Gujarat",
+    "papad supplier in Gujarat",
+    "Gujarati papad manufacturer",
+    "papad manufacturer near Ahmedabad",
+    "papad wholesaler in Gujarat",
+    "traditional Gujarati snacks manufacturer",
     "buy papad in Nadiad",
+    "order papad in Gujarat",
+    "papad supplier near Nadiad",
+    "Gujarati snacks in Nadiad",
+    "wholesale papad supplier",
+    "papad distributor in Gujarat",
+    "papad for retailers and restaurants",
     "khichiya papad",
+    "flat khichiya papad",
     "rice papad",
+    "coin papad",
+    "jeera papad",
+    "garlic papad",
+    "red chilli papad",
+    "green chilli papad",
+    "single mari papad",
+    "double mari papad",
     "mathiya",
+    "Gujarati mathiya",
     "chorafali",
+    "Gujarati papad varieties",
     "Gujarati snacks",
     "Aaswad Papad",
-    "papad in Nadiad",
-    "papad manufacturer in Gujarat"
+    "papad in Nadiad"
   ],
   alternates: {
     canonical: "/"
@@ -73,7 +93,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Aaswad Papad",
-    description: "Authentic Taste. Perfect Crisp.",
+    description: "Authentic Taste. Perfect Crispy.",
     images: [logoPath]
   }
 };

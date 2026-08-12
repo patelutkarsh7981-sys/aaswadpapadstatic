@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Eye, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
-import type { Product } from "@/data/products";
+import { getProductImageAlt, type Product } from "@/data/products";
 
 export function ProductCard({ product, highlighted }: { product: Product; highlighted?: boolean }) {
   return (
@@ -20,7 +20,7 @@ export function ProductCard({ product, highlighted }: { product: Product; highli
         <div className="relative aspect-square overflow-hidden bg-[#eee9df] p-5">
           <Image
             src={product.image}
-            alt={product.name}
+            alt={getProductImageAlt(product)}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
             className={`object-contain transition duration-300 group-hover:scale-105 ${["puri-papad", "flat-khichiya-papad"].includes(product.slug) ? "scale-[1.65] group-hover:scale-[1.75]" : ""}`}
