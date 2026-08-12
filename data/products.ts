@@ -80,7 +80,7 @@ export const products: Product[] = [
     slug: "garlic-mari-papad",
     name: "Garlic Mari Papad",
     category: "Papad",
-    description: "A crispy papad seasoned with garlic and mari spices.",
+    description: "A crispy papad seasoned with garlic and pepper seasoning.",
     weight: ["500GM"],
     image: "/products/clean/garlic-mari-papad.png",
     ingredients: papadIngredients,
