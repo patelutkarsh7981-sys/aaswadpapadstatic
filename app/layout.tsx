@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     "papad in Nadiad"
   ],
   alternates: {
-    canonical: "/"
+    canonical: siteUrl
   },
   icons: {
     icon: logoPath,

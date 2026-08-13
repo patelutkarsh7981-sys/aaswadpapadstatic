@@ -20,11 +20,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${segment.name} | Aaswad Papad`,
       description: `Explore Aaswad Papad's ${segment.name} range, including authentic Gujarati snacks from Nadiad.`,
-      type: "website"
+      type: "website",
+      url: `https://aaswadpapad.com/categories/${slug}`
     },
     keywords: [segment.name, "Aaswad Papad", "Gujarati snacks", "Nadiad"],
     alternates: {
-      canonical: `/categories/${slug}`
+      canonical: `https://aaswadpapad.com/categories/${slug}`
     }
   };
 }

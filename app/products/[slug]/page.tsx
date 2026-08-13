@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     keywords: [product.name, product.category, "Aaswad Papad", "Gujarati snacks"],
     alternates: {
-      canonical: `/products/${slug}`
+      canonical: `https://aaswadpapad.com/products/${slug}`
     }
   };
 }
