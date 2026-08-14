@@ -36,6 +36,9 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION
   },
+  other: {
+    "facebook-domain-verification": "uk9uxmnbhkjrlle019b97i8390u953"
+  },
   keywords: [
     "papad",
     "khichiya papad",
