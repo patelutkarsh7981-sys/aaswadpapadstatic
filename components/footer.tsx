@@ -22,7 +22,7 @@ export function Footer() {
             <p className="text-xl font-black">Aaswad Papad</p>
           </div>
           <p className="mt-3 max-w-md text-sm leading-6 text-cream/72">
-            Authentic Taste, Perfect Crisp. Serving Tradition Since Generations from Nadiad, Gujarat.
+            Authentic Taste, Perfect Crispy. Serving Tradition Since Generations from Nadiad, Gujarat.
           </p>
           <div className="mt-5 flex gap-3">
             {[

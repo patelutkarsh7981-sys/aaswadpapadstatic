@@ -11,7 +11,7 @@ export function Hero() {
           <h1 id="hero-title" className="display-title max-w-xl font-serif text-5xl font-black text-cacao sm:text-6xl md:text-8xl">
             Authentic Taste.
             <br />
-            Perfect Crisp.
+            Perfect Crispy.
           </h1>
           <p className="mt-7 max-w-md text-lg font-medium leading-8 text-cacao/70 md:text-xl">Serving Tradition Since Generations.</p>
           <div className="mt-9 flex flex-wrap gap-3">
@@ -34,7 +34,7 @@ export function Hero() {
         <div className="order-first relative aspect-square overflow-hidden rounded-[1.5rem] bg-cacao shadow-soft md:rounded-[2rem] lg:order-none">
           <Image src="/brochure/hero-v4-square.png" alt="Aaswad Papad traditional crispy papad arranged with spices" fill priority sizes="(max-width: 1024px) 100vw, 58vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-cacao/55 via-transparent to-transparent" />
-          <p className="absolute bottom-6 left-6 max-w-[15rem] text-sm font-bold uppercase tracking-[0.18em] text-white">Crisp, authentic, unforgettable.</p>
+          <p className="absolute bottom-6 left-6 max-w-[15rem] text-sm font-bold uppercase tracking-[0.18em] text-white">Crispy, authentic, unforgettable.</p>
         </div>
       </div>
     </section>

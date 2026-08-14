@@ -16,12 +16,12 @@ export function AboutContact() {
             <p className="text-sm font-black uppercase tracking-[0.22em] text-saffron">About Aaswad</p>
             <h2 className="display-title mt-3 max-w-3xl font-serif text-4xl font-black text-cream sm:text-5xl md:text-7xl">Serving Tradition Since Generations</h2>
             <p className="mt-7 max-w-3xl text-lg leading-8 text-cream/75 dark:text-cream/82">
-              Aaswad Papad brings authentic taste, perfect crisp, and premium quality to traditional Gujarati snacks.
+              Aaswad Papad brings authentic taste, perfect crispy, and premium quality to traditional Gujarati snacks.
               The brand stands for freshness, crispiness, authenticity, quality, tradition, and excellence.
             </p>
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {["Authentic Taste", "Perfect Crisp", "Premium Quality", "Traditional Manufacturing", "High Hygiene Standards", "Fresh Ingredients"].map((item, index) => (
+            {["Authentic Taste", "Perfect Crispy", "Premium Quality", "Traditional Manufacturing", "High Hygiene Standards", "Fresh Ingredients"].map((item, index) => (
                 <Reveal key={item} delay={index * 0.05} className="rounded-[8px] border border-cream/20 p-5 text-center font-black text-saffron">
                 {item}
               </Reveal>
