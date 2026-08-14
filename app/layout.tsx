@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Aaswad Papad",
-    description: "Authentic Taste. Perfect Crisp.",
+    description: "Authentic Taste. Perfect Crispy.",
     images: [logoPath]
   }
 };

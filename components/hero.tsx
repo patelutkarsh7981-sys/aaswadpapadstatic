@@ -22,7 +22,7 @@ export function Hero() {
           <h1 className="font-serif text-5xl font-black leading-tight md:text-7xl">
             Authentic Taste.
             <br />
-            Perfect Crisp.
+            Perfect Crispy.
           </h1>
           <p className="mt-5 text-xl font-medium text-white/86 md:text-2xl">Serving Tradition Since Generations.</p>
           <div className="mt-8 flex flex-wrap gap-3">

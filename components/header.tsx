@@ -15,11 +15,11 @@ const nav = [
 
 const productLinks = [
   { href: "/products", label: "All Products", description: "Explore the complete range" },
-  { href: "/categories/papad", label: "Papad", description: "Classic crisp varieties" },
-  { href: "/categories/mathiya", label: "Mathiya", description: "Traditional Gujarati favourites" },
-  { href: "/categories/chorafali", label: "Chorafali", description: "Festive, airy crunch" },
   { href: "/categories/rice-papad-khichiya-papad", label: "Rice Papad & Khichiya", description: "Our signature rice-based range" },
-  { href: "/categories/coin-papad", label: "Coin Papad", description: "Small, crisp snack-size papads" }
+  { href: "/categories/papad", label: "Papad", description: "Classic crispy varieties" },
+  { href: "/categories/coin-papad", label: "Coin Papad", description: "Small, crispy snack-size papads" },
+  { href: "/categories/mathiya", label: "Mathiya", description: "Traditional Gujarati favourites" },
+  { href: "/categories/chorafali", label: "Chorafali", description: "Festive, airy crunch" }
 ];
 
 export function Header() {
