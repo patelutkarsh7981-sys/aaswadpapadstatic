@@ -107,6 +107,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="facebook-domain-verification" content="uk9uxmnbhkjrlle019b97i8390u953" />
+      </head>
       <body className="font-sans antialiased">
         <ScrollProgress />
         <Header />

@@ -78,11 +78,11 @@ a {
     width: min(100% - 24px, 1240px);
   }
 
-  .hero-v4 .section-shell {
+  .hero-v5 .section-shell {
     min-height: 0;
   }
 
-  .hero-v4 .hero-copy {
+  .hero-v5 .hero-copy {
     padding-top: 1rem;
   }
 }

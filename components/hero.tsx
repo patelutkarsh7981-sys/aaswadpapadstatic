@@ -4,7 +4,7 @@ import { ArrowDown, Phone } from "lucide-react";
 
 export function Hero() {
   return (
-    <section aria-labelledby="hero-title" className="hero-v4 overflow-hidden bg-[#f7f4ee] pt-16">
+    <section aria-labelledby="hero-title" className="hero-v5 overflow-hidden bg-[#f7f4ee] pt-16">
       <div className="section-shell grid min-h-[calc(92vh-4rem)] items-center gap-8 py-10 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16 lg:py-20">
         <div className="relative z-10 py-8">
           <p className="mb-7 text-xs font-black uppercase tracking-[0.28em] text-leaf">Aaswad Papad</p>
@@ -32,7 +32,7 @@ export function Hero() {
           </div>
         </div>
         <div className="order-first relative aspect-square overflow-hidden rounded-[1.5rem] bg-cacao shadow-soft md:rounded-[2rem] lg:order-none">
-          <Image src="/brochure/hero-v4-square.png" alt="Aaswad Papad traditional crispy papad arranged with spices" fill priority sizes="(max-width: 1024px) 100vw, 58vw" className="object-cover" />
+          <Image src="/brochure/hero-v5-square.png" alt="Aaswad Papad traditional crispy papad arranged with spices" fill priority sizes="(max-width: 1024px) 100vw, 58vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-cacao/55 via-transparent to-transparent" />
           <p className="absolute bottom-6 left-6 max-w-[15rem] text-sm font-bold uppercase tracking-[0.18em] text-white">Crispy, authentic, unforgettable.</p>
         </div>

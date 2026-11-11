@@ -263,7 +263,7 @@ export const products: Product[] = [
     category: "Rice Papad",
     description: "3-inch rice papad with red chilli flavor.",
     weight: ["500GM"],
-    image: "/products/clean/3-inch-red-chilli-rice-papad-v3.png",
+    image: "/products/clean/3-inch-red-chilli-rice-papad.png",
     ingredients: ricePapadIngredients,
     featured: false
   },
